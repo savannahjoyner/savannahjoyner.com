@@ -1,15 +1,7 @@
 
 <script>
-
-  import Card from '../components/Card.svelte';
-  import Hero from '../components/Hero.svelte';
-  import ProjectGrid from "../components/ProjectGrid.svelte";
-  import Project from "../components/Project.svelte";
-  import InfoSection from "../components/InfoSection.svelte";
-  import Navbar from "../components/Navbar.svelte";
   import Banner from "../components/Banner.svelte";
   import Projects from "../components/Projects.svelte";
-  import AboutSection from "../components/AboutSection.svelte";
   import Social from "../components/Social.svelte";
   import data from "../data/data.js";
 </script>
