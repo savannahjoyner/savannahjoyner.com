@@ -11,7 +11,7 @@
   import Projects from "../components/Projects.svelte";
   import AboutSection from "../components/AboutSection.svelte";
   import Social from "../components/Social.svelte";
-  import DATA from "../DATA/data.js";
+  import data from "../data/data.js";
 </script>
 
 <style>
@@ -25,8 +25,8 @@
 
 
 
-<Banner bannerData={DATA.BANNER_DATA} />
+<Banner bannerData={data.BANNER_DATA} />
 
-<Projects projectData={DATA.PROJECT_DATA} />
+<Projects projectData={data.PROJECT_DATA} />
 
-<Social socialData={DATA.SOCIAL_DATA} />
+<Social socialData={data.SOCIAL_DATA} />

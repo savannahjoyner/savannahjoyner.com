@@ -1,6 +1,6 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
-  import DATA from "../DATA/data.js";
+  import data from "../data/data.js";
 	let scrolled = false
 
 	const onScroll = ({ target: { documentElement, body } }) => {
@@ -12,7 +12,7 @@
 	}
 </script>
 
-<Navbar {scrolled} navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
+<Navbar {scrolled} navlists={data.NAVBAR_DATA} header={data.HEADER} />
 
 <main>
 	<slot></slot>
