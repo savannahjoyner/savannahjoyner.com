@@ -1,6 +1,6 @@
 :root {
-  --gradient: linear-gradient(90deg, #D8AD5E 0%, #D8AD5E 100%);
-  --light: #ebddd0;
+  --gradient: linear-gradient(90deg, #fff 0%, #fff 100%);
+  --light: #fff;
   --grey: #000;
 }
 
