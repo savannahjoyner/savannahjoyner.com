@@ -2,6 +2,9 @@
   let sq1 = "https://blush.design/api/download?shareUri=H2pSVTNDv&w=800&h=800&fm=png";
   import Saos from 'saos';
 </script>
+<svelte:head> <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
+</svelte:head>
 <style>
  * {
   box-sizing: border-box;
@@ -34,7 +37,7 @@ font-family: 'Open Sans', sans-serif;
  }
  h3 {
  font-family: 'Proza Libre', sans-serif;
- color: #4C6085;
+ color: #000;
  font-weight: 500;
  font-size: 40px;
  font-kerning: unset;
@@ -43,7 +46,7 @@ font-family: 'Open Sans', sans-serif;
  text-align: left;
  }
  h4 {
-  font-family: 'Proza Libre', sans-serif;
+ font-family: 'Proza Libre', sans-serif;
  font-size: 12px;
  font-weight: 400;
  text-align: left;
@@ -210,6 +213,7 @@ font-family: 'Open Sans', sans-serif;
 .effect1:hover .bg:after{
   top: 6px;
 } 
+
 /* slide animation */
 @keyframes -global-scale-in-center {
     0% {
@@ -263,11 +267,11 @@ font-family: 'Open Sans', sans-serif;
   }
 </style>
 
-<section class="heading" id="projects">
+<section class="heading" id="experience">
   <div class="row">
-    <img style="width:5% " src="https://blush.design/api/download?shareUri=M5LfaMscZ&w=800&h=800&fm=png" alt=""/>
-    <h1 class="header"> Recent Work</h1>
-    <img style="width:5%" src="https://blush.design/api/download?shareUri=M5LfaMscZ&w=800&h=800&fm=png" alt=""/>
+    <img style="width:5% " src="https://blush.design/api/download?shareUri=g-36HS_ao&w=800&h=800&fm=png" alt=""/>
+    <h1 class="header">Experience</h1>
+    <img style="width:5%" src="https://blush.design/api/download?shareUri=g-36HS_ao&w=800&h=800&fm=png" alt=""/>
   </div>
 <!-- Photo Grid -->
 <Saos
@@ -278,31 +282,15 @@ font-family: 'Open Sans', sans-serif;
 <div class="row"> 
   <div class="column">
     <div class="container">
-      <img src="/images/cfm_mock.png" alt= "" style="width:100%">
+      <img src="/images/bog.png" alt= "" style="width:100%">
       <a class="overlay" href=cfm>
         <div class="text">
-          <h3 class="padding box">CFM Sustainability</h3>
+          <h3 class="padding box">Bits of Good</h3>
           <h4 class="margin-bottom padding"> 
-           How Community Farmer's Market can promote and increase their sustainable practices.
+           Front End Developer
           </h4>
-          <a class="effect1" href="cfm">
-           VIEW CASE STUDY
-           <span class="bg"></span>
-         </a>
-        </div>
-      </a>
-    </div>
-    <div class="container">
-      <img src="/images/dataviz_mock.png" alt= "" style="width:100% ">
-      <a class="overlay" href=cfm>
-        <div class="text">
-          <h3 class="padding box">Food Facts</h3>
-          <h4 class="margin-bottom padding"> 
-            Addressing food insecurity with compelling data visualizations.
-          </h4>
-          
-          <a class="effect1" href="cfm">
-           VIEW CASE STUDY
+          <a class="effect1" href="https://bitsofgood.org/">
+           GO TO SITE
            <span class="bg"></span>
          </a>
         </div>
@@ -311,32 +299,15 @@ font-family: 'Open Sans', sans-serif;
   </div>
   <div class="column">
     <div class="container">
-      <img src="/images/healthcare_mock.png" alt= "" style="width:100%">
+      <img src="/images/nebo.png" alt= "" style="width:100%">
       <a class="overlay" href=healthcare>
         <div class="text">
-          <h3 class="padding box">Healthcare Abroad</h3>
+          <h3 class="padding box">Nebo</h3>
           <h4 class="margin-bottom padding"> 
-            For students seeking healthcare while in a foreign country.
+           User Experience Intern
           </h4>
-          
-          <a class="effect1" href="cfm">
-           VIEW CASE STUDY
-           <span class="bg"></span>
-         </a>
-        </div>
-      </a>
-    </div>
-    <div class="container">
-      <img src="/images/vote_mock.png" alt= "" style="width:100%">
-      <a class="overlay" href=vote>
-        <div class="text">
-          <h3 class="padding box">Atlanta Votes</h3>
-          <h4 class="margin-bottom padding"> 
-            How Atlanta can change politics (Spoiler, we did it).
-          </h4>
-          
-          <a class="effect1" href="cfm">
-           VIEW CASE STUDY
+          <a class="effect1" href="https://www.neboagency.com/">
+           GO TO SITE
            <span class="bg"></span>
          </a>
         </div>

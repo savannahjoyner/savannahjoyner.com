@@ -9,10 +9,11 @@
 </svelte:head>
 
 <section id="nav-bar">
- <nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
- <a class="navbar-brand company_brand" href="/">
- {header}
- </a>
+ <!-- <nav class="navbar main-bgcolor navbar-expand-md navbar-dark"> -->
+<nav class="navbar navbar-expand-md navbar-dark main-bgcolor">
+  <a  href="/"> 
+  <img src="https://blush.design/api/download?shareUri=XnYMb2-OT&w=800&h=800&fm=png" alt= "" style="width:20%" />
+  </a>
  <button
  class= "navbar-toggler"
  type= "button"
@@ -62,13 +63,14 @@
 <style>
   a{
     font-size: 15px;
+    text-transform: none;
   }
 
   .dropbtn {
   font-family:'Open Sans', sans-serif;
   font-size: 17px;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: none;
   float: right;
   text-align: center;
   color: #000;

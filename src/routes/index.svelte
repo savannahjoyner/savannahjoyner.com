@@ -4,6 +4,8 @@
   import Projects from "../components/Projects.svelte";
   import Social from "../components/Social.svelte";
   import data from "../data/data.js";
+  import ProjectGrid from "../components/ProjectGrid.svelte"
+  import ExperienceGrid from "../components/ExperienceGrid.svelte";
 </script>
 
 <style>
@@ -19,6 +21,7 @@
 
 <Banner bannerData={data.BANNER_DATA} />
 
-<Projects projectData={data.PROJECT_DATA} />
+<ProjectGrid />
+<ExperienceGrid />
 
 <Social socialData={data.SOCIAL_DATA} />

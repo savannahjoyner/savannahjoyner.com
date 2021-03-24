@@ -1,18 +1,23 @@
 
 <script> 
+let bgImage = "https://blush.design/api/download?shareUri=kOETpr29vTqBQsp0&w=800&h=800&fm=png";
+let bggImage = 'https://blush.design/api/download?shareUri=HMhuBUOBW&c=Skin_0%7Ef7d3bb&w=800&h=800&fm=png';
+let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=png";
  export let bannerData = {};
- const { HEADING, DECRIPTION, TUTORIAL_URL, WATCH_TUTORIAL } = bannerData;
+ const { HEADING, INTRO, DESCRIPTION, TUTORIAL_URL, WATCH_TUTORIAL } = bannerData;
 </script>
 <svelte:head> <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
 </svelte:head>
-<section class= "main-bgcolor light-color" id= "banner">
+
+<section class="main-bgcolor" id= "banner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-7" style="margin-top:120px">
         <h1>{HEADING}</h1>
+        <h1>{DESCRIPTION}</h1>
         <!-- <p>{DECRIPTION}</p> -->
-        <h2> 
+        <h2 > 
           <div class="slidingVertical">
             <span>UX Designer</span>
             <span>Amatuer Kickboxer</span>
@@ -22,30 +27,49 @@
             <span>Bagel Connoisseur</span>
           </div>
         </h2>
+        <!-- <h3>{INTRO} </h3> -->
       </div>
-      <div class= "col-md-6">
-        <!-- <img src= "images/unnamed.jpg" alt="" class="img-fluid" /> --> 
+      <div class= "col-lg-5">
+        <!-- <img src= "{bgImage}" alt="" class="image" />  -->
+        <img src= "{bgImage}" alt="" style="width:100%" /> 
       </div>
     </div>
   </div>
-  <img src= "images/wave1.png" alt="" class="wave-img" />
+  <!-- <img src= "images/wave1.png" alt="" class="wave-img" /> -->
 </section>
 
 <style>
  section {
- padding-top: 5%;
+ /* background-image: url("images/yellow.jpg"); */
+ margin: 8% 10% ;
  }
+ .image {
+  outline:4px solid #050505;
+  outline-offset:-80px;
+  border: 50px solid transparent;
+  border-width:150px 50px 50px 150px;
+  margin:-75px 0 0 -75px;
+  height: 600px;
+  display:flex;
+  justify-content: center;
+
+}
  h1 {
  font-family: 'Proza Libre', sans-serif;
  color: #000;
- font-weight: 400;
- font-size: 70px;
+ font-weight: 500;
+ font-size: 50px;
  font-kerning: unset;
- margin-top: 100px;
  }
  h2 {
 font-family: 'Open Sans', sans-serif;
- font-size: 17px;
+ font-size: 23px;
+ font-weight: 500;
+ text-transform: none;
+ }
+  h3 {
+font-family: 'Open Sans', sans-serif;
+ font-size: 15px;
  font-weight: 500;
  text-transform: uppercase;
  }
@@ -61,20 +85,24 @@ section a {
 .wave-img {
  width: 100%;
  height: auto;
- margin-top: 300px;
+ margin-top: 30px;
  }
  
   /*Vertical Sliding*/
   .slidingVertical{
+    
     display: inline;
     text-indent: 8px;
+    padding-top: 10px;
   }
   .slidingVertical span{
     animation: topToBottom 15.0s linear infinite 0s;
     -ms-animation: topToBottom 15.0s linear infinite 0s;
     -webkit-animation: topToBottom 15.0s linear infinite 0s;
     color: #000;
+    background-color: #B3DADC;
     opacity: 0;
+    padding-right:6px;
     overflow: hidden;
     position: absolute;
   }

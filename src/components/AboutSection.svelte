@@ -1,6 +1,7 @@
 
 <script>
   import Saos from "saos";
+  
  export let socialData = {};
  const { IMAGES_LIST, HEADING } = socialData;
 
@@ -11,15 +12,32 @@ section {
  padding-top: 5%;
  padding-bottom: 5%;
  }
-  h1 {
+ .container {
+   padding-top: 25%;
+ }
+ .image {
+  outline:4px solid #050505;
+  outline-offset:-80px;
+  border-radius: 10px;
+  border: 50px solid transparent;
+  border-width:150px 50px 50px 150px;
+  margin:-75px 0 0 -75px;
+  height: 600px;
+  display:flex;
+  justify-content: center;
+
+}
+ .header {
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
  font-family: 'Proza Libre', sans-serif;
  color: #000;
  font-weight: 500;
- font-size: 40px;
+ font-size: 25px;
  font-kerning: unset;
- margin-top: 120px;
- margin-bottom: 50px;
- background-color:  #ebddd0;
  }
 
  h2 {
@@ -61,11 +79,20 @@ section a {
 
 
 .row {
-  width:100%;
-  padding: 50px;
-  padding-bottom: 150px;
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
   justify-content: center;
+  margin: 0% 10% ;
+  padding: 5px;
 
+}
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 10px;
+  justify-content: center;
 }
 
 .card {
@@ -194,12 +221,12 @@ bottom={250}>
 <div id= "about" >&nbsp</div>
   <section>
     <div class="row">
-      <div class= "col-md-4">
-        <img src="images/cropped2.jpg" alt="Savannah" class="profile-img">
+      <div class="column">
+        <img src="images/sav.png" alt="Savannah" class="image">
       </div>
-      <div class= "col-md-7">
+      <div class= "column">
         <div class="container">
-          <h1>Hi, I'm Savannah!</h1>
+          <h1>Hi, I'm Savannah but my friends call me Sav!</h1>
           <h3>I'm a 5th year Interaction Design student at Georgia Tech with developed leadership skills seeking full time employment for May 2021 in UX Design/Research or Product Design for high impact, human centered initiatives.</h3>
           <a class="link" href="SavannahJoyner_Resume.pdf" download>
             <h3 class="link">
@@ -213,14 +240,19 @@ bottom={250}>
   </Saos>
 
 
-<Saos
+
+
+  <div class="row">
+    <img style="width:5% " src="https://blush.design/api/download?shareUri=MjwBxVv0h&w=800&h=800&fm=png" alt=""/>
+    <h1 class="header">Background</h1>
+    <img style="width:5%" src="https://blush.design/api/download?shareUri=MjwBxVv0h&w=800&h=800&fm=png" alt=""/>
+  </div>
+  <Saos
 animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
 animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
 top={250}
 bottom={250}>
 <div class="row">
-<h2 class="col-md-4">My Background</h2>
-
     <div class="col-md-4">
       <p>Uniting technology with design in the spirit of social impact is my goal as a professional and I have crafted my experience to place myself in environments lending themselves to these interdisciplinary passions.
          In the Fall of 2019, <b>I held a full time internship as a UX Designer/Researcher</b> for Nebo, a digital marketing agency. In this role, I was able to create low fidelity prototypes and wireframes on platforms such as Figma and InVision as well as conduct various forms of user testing and research in order to identify areas of improvement on already established client sites.
@@ -231,34 +263,6 @@ bottom={250}>
         In this role, I have attended a semester long web dev bootcamp and worked alongside designers and developers to build high impact websites. I have also acquired a minor in Leadership Studies and Spanish during my time at Georgia Tech.
       </p>
     </div>
-</div>
-</Saos>
-
-<Saos
-animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
-animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-top={250}
-bottom={250}>
-<div class="row">
-<h2 class="col-md-4">Experience</h2>
-
-  <div class="col-md-4">
-    <a href="https://www.neboagency.com/">
-    <div class="card">
-      <img src="images/nebo.png" alt="Nebo" style="width:100%">        
-        <h3 >User Experience Intern</h3>
-    </div>
-  </a>
-  </div>
-
-  <div class="col-md-4">
-    <a href="https://bitsofgood.org/">
-    <div class="card">
-      <img src="images/bog.png" alt="bits of good" style="width:100%">
-        <h3> Front End Developer</h3>
-    </div>
-  </a>
-  </div>
 </div>
 </Saos>
 

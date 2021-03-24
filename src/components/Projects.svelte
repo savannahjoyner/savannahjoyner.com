@@ -3,21 +3,45 @@
   import Saos from 'saos';
  export let projectData = {};
  const { HEADING, ALL_PROJECTS, PROJECT_LIST } = projectData;
-
+ let bgImage = 'https://blush.design/api/download?shareUri=cizE-4c4s&w=800&h=800&fm=png';
 
 </script>
 
  
- <div id= "projects" class="padding">&nbsp</div>
+ <div style="background-image: url({bgImage})" id= "projects" class="padding">&nbsp</div>
  <Saos
  animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
  animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
  top={250}
  bottom={250}>
- <section>
+ <section class="alternate">
+   <div class="wrapper reverse">
+     <div>
+       <h1 class="padding box">CFM Sustainablity</h1>
+       <h2 class="margin-bottom padding"> 
+        How Community Farmer's Market promote and increase their sustianable practices.
+       </h2>
+       
+       <a class="effect1" href="cfm">
+        VIEW CASE STUDY
+        <span class="bg"></span>
+      </a>
+
+     </div>
+     <div class="buffer">&nbsp</div>
+     <img class="placeholder" src=images/cfm_mock.png alt="Georgia Food Deserts"/>
+   </div>
+ </section>
+ </Saos>
+ <Saos
+ animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+ animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
+ top={250}
+ bottom={250}>
+ <section >
    <div class="wrapper">
      <div>
-       <h1 class= "padding">Food Facts</h1>
+       <h1 class= "padding box">Food Facts</h1>
        <h2 class="margin-bottom padding"> 
         Addressing food insecurity with compelling data visualizations.
        </h2>
@@ -40,7 +64,7 @@
  <section class="alternate">
    <div class="wrapper reverse">
      <div>
-       <h1 class="padding">Atlanta Votes</h1>
+       <h1 class="padding box">Atlanta Votes</h1>
        <h2 class="margin-bottom padding"> 
         How Atlanta can change politics (Spoiler, we did it).
        </h2>
@@ -62,7 +86,7 @@
  <section>
    <div class="wrapper">
      <div>
-       <h1 class="padding">Healthcare Abroad</h1>
+       <h1 class="padding box">Healthcare Abroad</h1>
        <h2 class="margin-bottom padding"> 
         For students seeking healthcare while in a foreign country.
        </h2>
@@ -78,36 +102,26 @@
    </div>
  </section>
  </Saos>
- <Saos
- animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
- animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
- top={250}
- bottom={250}>
- <section class="alternate">
-   <div class="wrapper reverse">
-     <div>
-       <h1 class="padding">CFM Sustainablity</h1>
-       <h2 class="margin-bottom padding"> 
-        How Community Farmer's Market promote and increase their sustianable practices.
-       </h2>
-       
-       <a class="effect1" href="cfm">
-        VIEW CASE STUDY
-        <span class="bg"></span>
-      </a>
 
-     </div>
-     <div class="buffer">&nbsp</div>
-     <img class="placeholder" src=images/cfm_mock.png alt="Georgia Food Deserts"/>
-   </div>
- </section>
- </Saos>
 
 
 
 
 <style>
+  .image {
+  outline:4px solid #050505;
+  outline-offset:-80px;
+  border: 50px solid transparent;
+  border-width:150px 50px 50px 150px;
+  margin:-75px 0 0 -75px;
+  height: 600px;
+  display:flex;
+  justify-content: center;
 
+}
+.box {
+  background-color: #B3DADC;
+}
 .effect1 {
   color: #222;
   text-decoration: none;
@@ -211,7 +225,7 @@
   }
 
 	section {
-		min-height: 100vh;
+	  padding:10px;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -240,7 +254,7 @@
 	}
 
 	.alternate {
-		background-color: #fafafa;
+		background-color: #fff;
 		color: #000;
 	}
 

@@ -1,5 +1,5 @@
 
-const HEADER = "";
+const HEADER = "Savannah Joyner";
 
 const NAVBAR_DATA = [
  { id: 1, url: "/", label: "Home" },
@@ -8,7 +8,9 @@ const NAVBAR_DATA = [
 ];
 
 const BANNER_DATA = {
- HEADING: "Savannah Joyner"
+ HEADING: "Hello!",
+ DESCRIPTION: "I'm Savannah Joyner",
+ INTRO: "I'm a UX designer/researcher based in Atlanta, Ga. I'm passionate about people finding their purpose and doing the most good with it. I'd like to help make that possible through my work."
 };
 
 const PROJECT_DATA = {
