@@ -272,7 +272,7 @@ img {
 
     </article>
 
-    <article id="3697" class="location-listing">
+    <!-- <article id="3697" class="location-listing">
 
       <a class="location-title" href=cfm>
         My Personal Porfolio          </a>
@@ -282,7 +282,7 @@ img {
             <img width="300" height="169" src="/images/cfm_mock.png" alt= "">    </a>
       </div>
 
-    </article>
+    </article> -->
   </div>
   <!-- end grid container -->
 
