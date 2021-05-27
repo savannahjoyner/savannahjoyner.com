@@ -280,10 +280,10 @@ bottom={250}>
           </div>
         <div class="container">
           
-          <h3 class="description">I'm a 5th year Interaction Design student at Georgia Tech with developed leadership skills <b>seeking full time employment for May 2021</b> in UX Design/Research or Front End development for high impact, human centered initiatives.</h3>
+          <h3 class="description">I'm a 5th year Interaction Design student at Georgia Tech with developed leadership skills <b>seeking full time employment for May 2021</b> in UX Design/Research or Front End development for high impact, human centered initiatives. Uniting technology with design in the spirit of social impact is my goal as a professional and I have crafted my experience to place myself in environments lending themselves to these interdisciplinary passions. </h3>
           <br>
           <br>
-          <h3 class="description"><b>Fun Facts:</b> <br> I think sour skittles are underrated. I care deeply about equity and justice for all. <br>I kickbox in my free time and I try to read 2 books a month. I want to open a bagel shop by the time I'm 40. More than anything, I want my work to do good and help others be better.
+          <h3 class="description"> I think sour skittles are underrated. I care deeply about equity and justice for all. <br>I kickbox in my free time and I try to read 2 books a month. I want to open a bagel shop by the time I'm 40. More than anything, I want my work to do good and help others be better. 
 
          
         </div>
