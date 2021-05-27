@@ -11,7 +11,7 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
 </svelte:head>
 
 <section class="main-bgcolor" id= "banner">
-  <div class="container">
+  <div class="container" style="margin-top: 8%; margin-bottom:7%;">
     <div class="row">
       <div class="col-lg-7" style="margin-top:120px">
         <h1>{HEADING}</h1>
@@ -41,7 +41,7 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
 <style>
  section {
  /* background-image: url("images/yellow.jpg"); */
- margin: 8% 10% ;
+ /* padding: 8% 10% 0% 10% ; */
  }
  .image {
   outline:4px solid #050505;
@@ -63,8 +63,9 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
  }
  h2 {
 font-family: 'Open Sans', sans-serif;
- font-size: 23px;
+ font-size: 20px;
  font-weight: 500;
+ text-indent: 2px;
  text-transform: none;
  }
   h3 {
@@ -90,9 +91,8 @@ section a {
  
   /*Vertical Sliding*/
   .slidingVertical{
-    
     display: inline;
-    text-indent: 8px;
+    text-indent: 0px;
     padding-top: 10px;
   }
   .slidingVertical span{

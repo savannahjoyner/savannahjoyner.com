@@ -22,6 +22,7 @@
 <Banner bannerData={data.BANNER_DATA} />
 
 <ProjectGrid />
-<ExperienceGrid />
+
+<!-- <ExperienceGrid /> -->
 
 <Social socialData={data.SOCIAL_DATA} />

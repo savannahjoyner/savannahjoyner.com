@@ -2,17 +2,21 @@
 <script>
  export let navlists = [];
  export let header;
+ let y;
+ 
 </script>
-
+<svelte:window bind:scrollY={y} />
 <svelte:head> <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
 </svelte:head>
 
-<section id="nav-bar">
+
+  {#if y < 50}
+  <section id="nav-bar">
  <!-- <nav class="navbar main-bgcolor navbar-expand-md navbar-dark"> -->
-<nav class="navbar navbar-expand-md navbar-dark main-bgcolor">
-  <a  href="/"> 
-  <img src="https://blush.design/api/download?shareUri=XnYMb2-OT&w=800&h=800&fm=png" alt= "" style="width:20%" />
+<nav class="navbar navbar-expand-md navbar-light main-bgcolor">
+  <a style="max-width:100px" href="/"> 
+  <img src="https://blush.design/api/download?shareUri=XnYMb2-OT&w=800&h=800&fm=png" alt= "" style="width:100%" />
   </a>
  <button
  class= "navbar-toggler"
@@ -59,7 +63,7 @@
  </div>
  </nav>
 </section>
-
+{/if}
 <style>
   a{
     font-size: 15px;

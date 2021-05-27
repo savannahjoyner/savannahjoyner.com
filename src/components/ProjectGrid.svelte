@@ -3,213 +3,85 @@
   import Saos from 'saos';
 </script>
 <style>
+img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto ; */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2em;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align:center;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  font-family:'Proza Libre', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
  * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.heading{
-  padding-top: 100px;
-}
-.header {
-  text-align: center;
-  padding: 10px;
-}
 
-h1 {
- font-family: 'Proza Libre', sans-serif;
- color: #000;
- font-weight: 500;
- font-size: 25px;
- font-kerning: unset;
- }
- h2 {
-font-family: 'Open Sans', sans-serif;
- font-size: 18px;
- font-weight: 700;
- text-transform: none;
- }
- h3 {
- font-family: 'Proza Libre', sans-serif;
- color: #4C6085;
- font-weight: 500;
- font-size: 40px;
- font-kerning: unset;
- margin-top: 100px;
- margin-bottom: 20px;
- text-align: left;
- }
- h4 {
-  font-family: 'Proza Libre', sans-serif;
- font-size: 12px;
- font-weight: 400;
- text-align: left;
- text-transform: none;
- }
- 
- .margin-bottom {
-    margin-bottom: 5%;
-  }
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0% 10% ;
-  padding: 5px;
-}
-
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 10px;
-}
-
-.column img {
-  margin-top: 20px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/* Hover effects */
-.container {
-  position: relative;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #FBFBFF;
-
-}
-
-.container:hover .overlay {
-  opacity: 100%;
-}
-
-.text {
-  color: #000;
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* button animation */
-
-.effect1 {
-  color: #222;
-  text-decoration: none;
-  justify-content: left;
-  font-family:'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: none;
-  position: relative;
-  padding: 10px 50px 10px 10px;
-
-  -webkit-transition: all 0.3s;
-
-  -o-transition: all 0.3s;
-
-  transition: all 0.3s;
-
-  -webkit-transform: scale(3);
-
-      -ms-transform: scale(3);
-
-          transform: scale(3); /*change scale(3) to scale(1)*/
-}
-
-.effect1 .bg {
-  background: #EBDDD0;
-  width: 30px;
-  height: 2px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -1px;
-  z-index: -1;
-
-  -webkit-transition: all 0.3s;
-
-  -o-transition: all 0.3s;
-
-  transition: all 0.3s;
-}
-
-.effect1:hover {
-  padding-right: 20px;
-  color: #000;
-}
-
-.effect1:hover .bg {
-  height: 100%;
-  width: 100%;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-
-.effect1 .bg:before, .effect1 .bg:after {
-  content: '';
-  height: 2px;
-  width: 10px;
-  background: #EBDDD0;
-  position: absolute;
-  right: -2px;      
-  -webkit-transition: all 0.3s;      
-  -o-transition: all 0.3s;      
-  transition: all 0.3s;
-}
-
-.effect1 .bg:before {
-  bottom: 3px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.effect1 .bg:after{
-  top: 3px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.effect1:hover .bg:before,
-.effect1:hover .bg:after{
-  right: 0;
-}
-
-.effect1:hover .bg:before{
-  bottom: 6px;
-}
-
-.effect1:hover .bg:after{
-  top: 6px;
-} 
 /* slide animation */
 @keyframes -global-scale-in-center {
     0% {
@@ -263,27 +135,25 @@ font-family: 'Open Sans', sans-serif;
   }
 </style>
 
-<section class="heading" id="projects">
-  <div class="row">
+<!-- <section class="heading" id="projects"> -->
+  <!-- <div class="row">
     <img style="width:5% " src="https://blush.design/api/download?shareUri=M5LfaMscZ&w=800&h=800&fm=png" alt=""/>
     <h1 class="header"> Recent Work</h1>
     <img style="width:5%" src="https://blush.design/api/download?shareUri=M5LfaMscZ&w=800&h=800&fm=png" alt=""/>
-  </div>
+  </div> -->
 <!-- Photo Grid -->
-<Saos
+<!-- <Saos
  animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
- animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
- top={250}
- bottom={250}>
+ top={250}>
 <div class="row"> 
   <div class="column">
     <div class="container">
-      <img src="/images/cfm_mock.png" alt= "" style="width:100%">
+      <img src="/images/cfm_mock.png" alt= "" style="width:100%" />
       <a class="overlay" href=cfm>
         <div class="text">
           <h3 class="padding box">CFM Sustainability</h3>
           <h4 class="margin-bottom padding"> 
-           How Community Farmer's Market can promote and increase their sustainable practices.
+           How Community Farmers Market can promote and increase their sustainable practices.
           </h4>
           <a class="effect1" href="cfm">
            VIEW CASE STUDY
@@ -345,4 +215,76 @@ font-family: 'Open Sans', sans-serif;
   </div>  
 </div>
 </Saos>
-</section>
+</section> -->
+
+<Saos
+ animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
+ top={250}>
+<div class="child-page-listing">
+
+  <div class="grid-container">
+
+    <article id="3685" class="location-listing">
+      <a class="location-title" style=" background: rgba(37, 31, 71, 0.4)" href=healthcare>
+        For students seeking healthcare while in a foreign country.</a>
+    
+
+      <div class="location-image">
+        <a href=healthcare>
+            <img width="300" height="169" src=" /images/healthcare_mock.png" alt= "">    </a>
+      </div>
+
+    </article>
+
+    <article id="3688" class="location-listing">
+
+      <a class="location-title" style= " background: rgba(213, 87, 56, 0.4);" href=fooddes>
+        Addressing food insecurity with compelling data visualizations.          </a>
+
+      <div class="location-image">
+        <a href=fooddata>
+            <img width="300" height="169" src="/images/dataviz_mock.png" alt= "">    </a>
+      </div>
+
+    </article>
+
+    <article id="3691" class="location-listing">
+
+      <a class="location-title" style= " background: rgba(19, 111, 99, 0.4);" href=cfm>
+        How Community Farmers Market can promote and increase their sustainable practices.          </a>
+
+      <div class="location-image">
+        <a href=cfm>
+            <img width="300" height="169" style="height: 100%" src="/images/cfm_mock.png" alt= "">    </a>
+      </div>
+
+    </article>
+
+    <article id="3694" class="location-listing">
+
+      <a class="location-title" style="background: rgba(71, 49, 152, 0.4)" href=vote>
+        How Atlanta can change politics (Spoiler, we did it).         </a>
+
+      <div class="location-image">
+        <a href=cfm>
+            <img width="300" height="169" src="/images/vote_mock.png" alt= "">    </a>
+      </div>
+
+    </article>
+
+    <article id="3697" class="location-listing">
+
+      <a class="location-title" href=cfm>
+        My Personal Porfolio          </a>
+
+      <div class="location-image">
+        <a href=cfm>
+            <img width="300" height="169" src="/images/cfm_mock.png" alt= "">    </a>
+      </div>
+
+    </article>
+  </div>
+  <!-- end grid container -->
+
+</div>
+</Saos>

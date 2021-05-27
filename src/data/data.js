@@ -61,11 +61,17 @@ const ABOUT_DATA = {
 const SOCIAL_DATA = {
  HEADING: "Find me on social media",
  IMAGES_LIST: [
-  { IMAGE: "images/instagram-icon.png",
+  { IMAGE: "images/instagram.png",
     URL: "https://www.instagram.com/savjoyner/"
   },
-  { IMAGE: "images/linkedin-icon.png",
+  { IMAGE: "images/linkedin.png",
    URL: "https://www.linkedin.com/in/savannah-joyner-5a4b69180/"
+  },
+  { IMAGE: "images/github.png",
+   URL: "https://github.com/savannahjoyner"
+  },
+  { IMAGE: "images/spotify.png",
+   URL: "https://open.spotify.com/user/savannah.joyner"
   }
  ]
 };
