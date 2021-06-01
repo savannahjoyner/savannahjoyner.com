@@ -7,6 +7,11 @@
 </script>
 <svelte:window bind:scrollY={y} />
 <svelte:head> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@200;300;800&family=Source+Serif+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
 </svelte:head>
@@ -17,7 +22,8 @@
  <!-- <nav class="navbar main-bgcolor navbar-expand-md navbar-dark"> -->
 <nav class="navbar navbar-expand-md navbar-light main-bgcolor">
   <div class="topnav-centered">
-    <a href="#home" class="active"><img src="../images/android-chrome-192x192.png" alt= ""  style="width:30%; margin-left:30%;"/></a>
+    <a href="#home" class="active">SAVJOYNER</a>
+    <!-- <a href="#home" class="active"><img src="../images/android-chrome-192x192.png" alt= ""  style="width:30%; margin-left:30%;"/></a> -->
   </div>
   <!-- <a class= "nav-link dropbtn" href="/"> 
     Work
@@ -84,11 +90,23 @@
 </section>
 {/if}
 <style>
+  .active {
+    font-family:'Proza Libre', sans-serif;
+    color: rgb(51, 48, 48);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: none;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    /* color: #000; */
+    opacity: 100%;
+    padding: 0 0 0 20px;
+  }
   .topnav-centered a {
   float: center;
   margin-top:0px;
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
