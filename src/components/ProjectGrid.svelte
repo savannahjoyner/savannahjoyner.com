@@ -11,10 +11,10 @@ img {
 .grid-container {
   display: grid;
   /* grid-template-columns: auto auto ; */
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 2em;
-  padding-left: 20%;
-  padding-right: 20%;
+  grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+  grid-gap: 5em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 
@@ -31,7 +31,7 @@ img {
 .location-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
 
 .location-title {
@@ -217,9 +217,7 @@ img {
 </Saos>
 </section> -->
 
-<Saos
- animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
- top={250}>
+
 <div class="child-page-listing">
 
   <div class="grid-container">
@@ -287,4 +285,3 @@ img {
   <!-- end grid container -->
 
 </div>
-</Saos>

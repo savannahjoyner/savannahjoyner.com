@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>Food Deserts in Georgia</title>
+  <title>Food Facts</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@200;300;800&family=Source+Serif+Pro:wght@300;400;600&display=swap"

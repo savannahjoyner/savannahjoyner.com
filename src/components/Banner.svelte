@@ -8,16 +8,29 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
 </script>
 <svelte:head> <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@200;300;800&family=Source+Serif+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
 </svelte:head>
 
 <section class="main-bgcolor" id= "banner">
-  <div class="container" style="margin-top: 8%; margin-bottom:7%;">
-    <div class="row">
-      <div class="col-lg-7" style="margin-top:120px">
-        <h1>{HEADING}</h1>
-        <h1>{DESCRIPTION}</h1>
+  <div class="container" style="margin-top: 10%; margin-bottom:17%;">
+    
+      <div class="text-align-center" style="margin-top:30px">
+        <h1 style=""> Hello! I'm Savannah Joyner. &nbsp;
+          <div class="slidingVertical">
+            <span> I'm a UX Designer.</span>
+            <span> I'm an Amatuer Kickboxer.</span>
+            <span> I'm a UX Researcher.</span>
+            <span> I'm a Goofball.</span>
+            <span> I'm a Front End Developer.</span>
+            <span> I'm a Bagel Connoisseur.</span>
+          </div>
+         </h1>
+      
         <!-- <p>{DECRIPTION}</p> -->
-        <h2 > 
+        <!-- <h1 > 
           <div class="slidingVertical">
             <span>UX Designer</span>
             <span>Amatuer Kickboxer</span>
@@ -26,19 +39,17 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
             <span>Front End Developer</span>
             <span>Bagel Connoisseur</span>
           </div>
-        </h2>
+        </h1> -->
         <!-- <h3>{INTRO} </h3> -->
       </div>
-      <div class= "col-lg-5">
-        <!-- <img src= "{bgImage}" alt="" class="image" />  -->
-        <img src= "{bgImage}" alt="" style="width:100%" /> 
-      </div>
+     
     </div>
-  </div>
+ 
   <!-- <img src= "images/wave1.png" alt="" class="wave-img" /> -->
 </section>
 
 <style>
+  
  section {
  /* background-image: url("images/yellow.jpg"); */
  /* padding: 8% 10% 0% 10% ; */
@@ -55,11 +66,15 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
 
 }
  h1 {
- font-family: 'Proza Libre', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
  color: #000;
  font-weight: 500;
- font-size: 50px;
+ line-height: 2;
  font-kerning: unset;
+ margin-left: 10%;
+ /* margin-left:10%; */
+ text-align: auto;
  }
  h2 {
 font-family: 'Open Sans', sans-serif;
@@ -88,12 +103,15 @@ section a {
  height: auto;
  margin-top: 30px;
  }
+ img {
+     width: 100%;
+    }
  
   /*Vertical Sliding*/
   .slidingVertical{
     display: inline;
     text-indent: 0px;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .slidingVertical span{
     animation: topToBottom 15.0s linear infinite 0s;
@@ -156,5 +174,46 @@ section a {
     25% { opacity: 0; -ms-transform: translateY(0px); }
     
    
+  }
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+    line-height: auto;
+    font-kerning: unset;
+    margin-left: 5%;
+    /* margin-left:10%; */
+    text-align: auto;
+    }
+ }
+
+  
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    line-height: auto;
+    font-kerning: unset;
+    margin-left: 5%;
+    /* margin-left:10%; */
+    text-align: auto;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    h1 {
+      font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: auto;
+    font-kerning: unset;
+    margin-left: 5%;
+    /* margin-left:10%; */
+    text-align: auto;
+    }
   }
 </style>

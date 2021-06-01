@@ -7,20 +7,25 @@
 <section id="social-media" class="section" style="background-color: #B3DADC; margin-top: 100px">
  
  <div class="container text-center">
- <h2 class="heading">{HEADING}</h2>
- <div class="social-icons section-body">
- {#each IMAGES_LIST as list}
- <a href= {list.URL}
- target=" _blank ">
- <img src={list.IMAGE} alt="Social media" />
- </a>
- {/each}
- </div> 
- <a class="link" href="SavannahJoyner_Resume.pdf" download>
-    <h3 class="link">
-     Download Resume
-    </h3>
-  </a>
+ <!-- <h2 class="heading">{HEADING}</h2> -->
+    <div class="social-icons section-body">
+    {#each IMAGES_LIST as list}
+    <a href= {list.URL}
+    target=" _blank ">
+    <img src={list.IMAGE} alt="Social media" />
+    </a>
+    {/each}
+    </div> 
+    <a class="link" href="SavannahJoyner_Resume.pdf" download>
+        <h3 class="link">
+        Download Resume
+        </h3>
+      </a>
+    <a class="link" href="https://github.com/savannahjoyner/savannahjoyner.com" >
+      <h3 class="link">
+      Github Repo
+      </h3>
+    </a>
  </div>
 </section>
 

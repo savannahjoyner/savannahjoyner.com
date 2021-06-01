@@ -12,6 +12,15 @@
  * {
   box-sizing: border-box;
 }
+.description {
+  display: inline;
+    margin-top: 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 350;
+    color: #1a1b1f;
+}
 img {
   width: 100%; /* need to overwrite inline dimensions */
   height: auto;
@@ -133,7 +142,7 @@ h1 {
  font-kerning: unset;
  }
  
- h3 {
+ /* h3 {
  font-family: 'Proza Libre', sans-serif;
  color: #000;
  font-weight: 500;
@@ -143,7 +152,7 @@ h1 {
  margin-bottom: 20px;
  letter-spacing: 2px;
  text-align: left;
- }
+ } */
 
 .row {
   display: -ms-flexbox; /* IE 10 */
@@ -154,7 +163,88 @@ h1 {
   margin: 0% 10% ;
   padding: 5px;
 }
-
+@media screen and (max-width: 991px) {
+    .grid-12 {
+      margin-top: 40px;
+      margin-right: 40px;
+      margin-left: 40px;
+      grid-column-gap: 60px;
+    }
+    .header {
+      margin-top: 60px;
+      margin-right: 40px;
+      margin-left: 40px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .project-detail {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .grid-12 {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+      grid-column-gap: 30px;
+    }
+    .header {
+      margin-top: 40px;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+    .section-header {
+      font-size: 24px;
+      line-height: 42px;
+    }
+    .project-detail {
+      margin-right: 15%;
+      margin-left: 15%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .list {
+      padding-left: 20px;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    p {
+      font-size: 14px;
+      line-height: 36px;
+    }
+    .text-block {
+      font-size: 14px;
+      line-height: 36px;
+    }
+    .heading-small {
+      font-size: 12px;
+    }
+    .grid-12 {
+      margin-top: 0px;
+      grid-column-gap: 20px;
+    }
+    .header {
+      font-size:18px;
+      line-height: 15px;
+    }
+    .section-header {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .project-detail {
+      margin-right: 20px;
+      margin-left: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .list {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+  }
 /* slide animation */
 @keyframes -global-scale-in-center {
     0% {
@@ -246,41 +336,6 @@ h1 {
       </div>
 
     </article>
-    
-<!-- <div class="row"> 
-  <div class="column">
-    <div class="container">
-      <img src="/images/bog.png" alt= "" style="width:100%">
-      <a class="overlay" href=cfm>
-        <div class="text">
-          <h3 class="padding box">Bits of Good</h3>
-          <h4 class="margin-bottom padding"> 
-           Front End Developer
-          </h4>
-          <a class="effect1" href="https://bitsofgood.org/">
-           GO TO SITE
-           <span class="bg"></span>
-         </a>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="column">
-    <div class="container">
-      <img src="/images/nebo.png" alt= "" style="width:100%">
-      <a class="overlay" href=healthcare>
-        <div class="text">
-          <h3 class="padding box">Nebo</h3>
-          <h4 class="margin-bottom padding"> 
-           User Experience Intern
-          </h4>
-          <a class="effect1" href="https://www.neboagency.com/">
-           GO TO SITE
-           <span class="bg"></span>
-         </a>
-        </div>
-      </a>
-    </div> -->
   </div>  
 </div>
 <div class="project-detail">
