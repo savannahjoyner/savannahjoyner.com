@@ -19,7 +19,7 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
     
       <div class="text-align-center" style="margin-top:30px">
         <h1 style=""> Hello! I'm Savannah Joyner. &nbsp;
-          <div class="slidingVertical">
+         <div class="slidingVertical">
             <span> I'm a UX Designer.</span>
             <span> I'm an Amatuer Kickboxer.</span>
             <span> I'm a UX Researcher.</span>
@@ -175,7 +175,7 @@ section a {
     
    
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1050px) {
     h1 {
       font-family: "Nunito", sans-serif;
     font-size: 30px;
@@ -187,33 +187,61 @@ section a {
     /* margin-left:10%; */
     text-align: auto;
     }
+    .slidingVertical{
+     text-align: left;
+     margin-bottom: 60px;
+}
+    .slidingVertical::before{
+        content: "\a";
+        white-space: pre;
+    }
  }
 
   
   @media screen and (max-width: 767px) {
     h1 {
       font-family: "Nunito", sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     color: #000;
     font-weight: 500;
     line-height: auto;
     font-kerning: unset;
     margin-left: 5%;
+    
     /* margin-left:10%; */
     text-align: auto;
+    }
+    .slidingVertical{
+     text-align: left;
+     margin-bottom: 40px;
+}
+    .slidingVertical::before{
+        content: "\a";
+        white-space: pre;
     }
   }
   @media screen and (max-width: 479px) {
     h1 {
       font-family: "Nunito", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
+    max-width: fit-content;
     color: #000;
     font-weight: 500;
     line-height: auto;
     font-kerning: unset;
     margin-left: 5%;
+    margin-bottom: 100px;
     /* margin-left:10%; */
     text-align: auto;
+    }
+    .slidingVertical{
+     text-align: left;
+     margin-bottom: 60px;
+     font-size: 24px;
+}
+    .slidingVertical::before{
+        content: "\a";
+        white-space: pre;
     }
   }
 </style>
