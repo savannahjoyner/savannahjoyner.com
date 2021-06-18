@@ -348,7 +348,7 @@ h1 {
     send-off. </h3>
   <br>
   <br>
-  <h3 class="description"> Since early January 2020, I have been able to unite my interdisciplinary pursuits as a front end developer for Bits of Goods. This GT 
+  <h3 class="description"> Since early January 2020, I have been able to unite my interdisciplinary pursuits as a <b> front end developer for Bits of Goods</b>. This GT 
     chapter of Hack4Impact, is devoted to doing good by building sophisticated websites and apps for nonprofits across the 
     country. In this role, I attended a semester-long boot camp covering the essentials of client-side development including CSS, 
     HTML, Javascript, and React. For the last year, I’ve worked alongside designers and developers to build high impact websites 
