@@ -339,11 +339,21 @@ h1 {
   </div>  
 </div>
 <div class="project-detail">
-  <h3 class="description">In the Fall of 2019, <b>I held a full time internship as a UX Designer/Researcher</b> for Nebo, a digital marketing agency. In this role, I was able to create low fidelity prototypes and wireframes on platforms such as Figma and InVision as well as conduct various forms of user testing and research in order to identify areas of improvement on already established client sites. </h3>
+  <h3 class="description">In the Fall of 2019, <b>I held a full time internship as a UX Designer/Researcher</b> for Nebo, a digital marketing agency. In this role,  I learned how to collaborate with a professional interaction design team 
+    and refine my skills in design thinking, prototyping, user testing and iterative design. With Nebo’s unique User Experience 
+    Optimization team, I had the opportunity to facilitate A/B testing, session recording, and track various analytics on established 
+    client sites. From my findings, I made data-informed suggestions to optimize customer journeys and attended key stakeholder 
+    meetings where my site mock-ups were pitched and executed. I was fortunate enough to work with Nebo’s various clients 
+    on projects in every stage of the design process including brainstorming, site mapping, prototyping, development, Q&A, and 
+    send-off. </h3>
   <br>
   <br>
-  <h3 class="description"> Since early January 2020, I have worked as a <b>Front End Developer for Bits of Good</b>. Bits of Good, the GT chapter of Hack4Impact, is devoted to doing good by building sophisticated websites and apps for nonprofits across the country. 
-    In this role, I have attended a semester long bootcamp and currently work alongside designers and developers to build high impact websites.</h3>
+  <h3 class="description"> Since early January 2020, I have been able to unite my interdisciplinary pursuits as a front end developer for Bits of Goods. This GT 
+    chapter of Hack4Impact, is devoted to doing good by building sophisticated websites and apps for nonprofits across the 
+    country. In this role, I attended a semester-long boot camp covering the essentials of client-side development including CSS, 
+    HTML, Javascript, and React. For the last year, I’ve worked alongside designers and developers to build high impact websites 
+    using JS frameworks React and Svelte. Here, in the midst of the pandemic, I honed my development/design skills and learned 
+    the importance of self-motivation, team unity, and cherishing human connection</h3>
   </div>
 </Saos>
 </section>
