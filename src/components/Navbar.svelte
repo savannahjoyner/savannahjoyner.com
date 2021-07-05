@@ -84,7 +84,7 @@
   <a class= "nav-link dropbtn" href="about"> About </a>
  </div>
  <div class= "nav-item dropdown ">
-  <a class= "nav-link dropbtn" href="SavannahJoyner_Resume.pdf"> My Resume</a>
+  <a class= "nav-link dropbtn" href="SavannahJoyner_Resume_2021.pdf"> My Resume</a>
  </div>
  </ul>
  </div>
