@@ -1,7 +1,13 @@
 <script>
   let sq1 = "https://blush.design/api/download?shareUri=H2pSVTNDv&w=800&h=800&fm=png";
   import Saos from 'saos';
+  import Navbar from '../components/Navbar.svelte';
+  import { slide , fly } from 'svelte/transition';
+  
+  import { Tabs, TabList, TabPanel, Tab } from './tabs.js';
+  let y = 0;
 </script>
+<svelte:window bind:scrollY={y} />
 <style>
 img {
   width: 100%; /* need to overwrite inline dimensions */
@@ -103,7 +109,7 @@ img {
 /* for touch screen devices */
 @media (hover: none) { 
   .location-title {
-    opacity: 1;
+    /* opacity: 1; */
   }
   .location-image img {
     filter: blur(0.5px);
@@ -165,6 +171,9 @@ img {
       opacity: 1;
     }
   }
+.background-project {
+  background-color: rgba(0, 0, 0, 0.03);
+}
 </style>
 
 <!-- <section class="heading" id="projects"> -->
@@ -249,71 +258,138 @@ img {
 </Saos>
 </section> -->
 
+<Tabs>
+	<TabList >
+		<Tab>UX Design</Tab>
+		<Tab>Frontend Dev</Tab>
+	</TabList>
+	<TabPanel >
+		<div>
 
-<div class="child-page-listing">
-
-  <div class="grid-container">
-
-    <article id="3685" class="location-listing">
-      <a class="location-title" style=" background: rgba(37, 31, 71, 0.4)" href=healthcare>
-        For students seeking healthcare while in a foreign country.</a>
+      <div class="grid-container">
+        <article id="3685" class="location-listing">
+          <a class="location-title" style=" background: rgba(37, 31, 71, 0.7)" href=FitnessVillage>
+            Role: Product Designer<br><br> Conceptualizing an app that makes staying active fun and easy for children. </a>
+        
     
-
-      <div class="location-image">
-        <a href=healthcare>
-            <img width="300" height="169" src=" /images/healthcare_mock.png" alt= "">    </a>
+          <div class="location-image">
+            <a href=FitnessVillage>
+                <img width="300" height="169" src=" /images/fitness_square.png" alt= "">    </a>
+          </div>
+    
+        </article>
+        <article id="3685" class="location-listing">
+          <a class="location-title" style=" background: rgba(37, 31, 71,0.7)" href=healthcare>
+            Role: UX Researcher/Designer<br><br> Conceptualizing an app that provides resources for students seeking healthcare while studying abroad. </a>
+        
+    
+          <div class="location-image">
+            <a href=healthcare>
+                <img width="300" height="169" src=" /images/healthcare_mock.jpg" alt= "">    </a>
+          </div>
+    
+        </article>
+    
+        <article id="3688" class="location-listing">
+    
+          <a class="location-title" style= " background: rgba(213, 87, 56, 0.7);" href=fooddes>
+            Role: Data Analyst and UX Designer <br><br> Addressing food insecurity with compelling data visualizations. </a>
+    
+          <div class="location-image">
+            <a href=fooddata>
+                <img width="300" height="169" src="/images/food_mock.png" alt= "">    </a>
+          </div>
+    
+        </article>
+    
+        <article id="3691" class="location-listing">
+    
+          <a class="location-title" style= " background: rgba(196,188,133, 0.7);" href=cfm>
+            Role: UX Designer/Researcher <br><br>Conceptualzing a platform that can help a local farmers market promote and increase their sustainable practices.          </a>
+    
+          <div class="location-image">
+            <a href=cfm>
+                <img width="300" height="169" style="height: 100%" src="/images/cfm_mock2.jpg" alt= "">    </a>
+          </div>
+    
+        </article>
+    
+        <article id="3694" class="location-listing">
+    
+          <a class="location-title" style="background: rgba(150,142,142, 0.75)" href=vote>
+            Role: Designer and Data Analyst <br><br> Leveraging good information design to visualize the importance of voting in Atlanta. </a>
+    
+          <div class="location-image">
+            <a href=cfm>
+                <img width="300" height="169" src="/images/vote_mock.jpg" alt= "">    </a>
+          </div>
+    
+        </article>
+    
+        <!-- <article id="3697" class="location-listing">
+    
+          <a class="location-title" href=cfm>
+            My Personal Porfolio          </a>
+    
+          <div class="location-image">
+            <a href=cfm>
+                <img width="300" height="169" src="/images/cfm_mock.png" alt= "">    </a>
+          </div>
+    
+        </article> -->
       </div>
+      <!-- end grid container -->
+    
+    </div>
+	</TabPanel>
 
-    </article>
+	<TabPanel>
+		<div class="child-page-listing">
 
-    <article id="3688" class="location-listing">
-
-      <a class="location-title" style= " background: rgba(213, 87, 56, 0.4);" href=fooddes>
-        Addressing food insecurity with compelling data visualizations.          </a>
-
-      <div class="location-image">
-        <a href=fooddata>
-            <img width="300" height="169" src="/images/dataviz_mock.png" alt= "">    </a>
+      <div class="grid-container">
+        <article id="3685" class="location-listing">
+          <a class="location-title" style=" background: rgba(145, 197, 167, 0.8)" href=https://bitsofgood.org/projects/general-solution>
+            Role: Front-end Developer<br><br> A platform that connects volunteers and donors to non-profits both locally and nationally, and provides the tools that enable non-profits to manage volunteer opportunities and donations. </a>
+        
+    
+          <div class="location-image">
+            <a href=phys>
+                <img width="300" height="169" src=" /images/general_mock.png" alt= "">    </a>
+          </div>
+    
+        </article>
+        <article id="3685" class="location-listing">
+          <a class="location-title" style=" background: rgba(235,173,117, 0.8)" href=https://bitsofgood.org/projects/mapscout>
+            Role: Front-end Developer<br><br> Mapscout is a general solution, completely free for non-profits, that makes it simple to build and customize interactive resource maps.</a>
+        
+    
+          <div class="location-image">
+            <a href=phys>
+                <img width="300" height="169" src=" /images/gen_mock1.png" alt= "">    </a>
+          </div>
+    
+        </article>
+       
+    
+        <!-- <article id="3697" class="location-listing">
+    
+          <a class="location-title" href=cfm>
+            My Personal Porfolio          </a>
+    
+          <div class="location-image">
+            <a href=cfm>
+                <img width="300" height="169" src="/images/cfm_mock.png" alt= "">    </a>
+          </div>
+    
+        </article> -->
       </div>
+      <!-- end grid container -->
+    
+    </div>
+	</TabPanel>
 
-    </article>
+	<TabPanel>
+		<h2>Third panel</h2>
+	</TabPanel>
+</Tabs>
 
-    <article id="3691" class="location-listing">
-
-      <a class="location-title" style= " background: rgba(19, 111, 99, 0.4);" href=cfm>
-        How Community Farmers Market can promote and increase their sustainable practices.          </a>
-
-      <div class="location-image">
-        <a href=cfm>
-            <img width="300" height="169" style="height: 100%" src="/images/cfm_mock.png" alt= "">    </a>
-      </div>
-
-    </article>
-
-    <article id="3694" class="location-listing">
-
-      <a class="location-title" style="background: rgba(71, 49, 152, 0.4)" href=vote>
-        How Atlanta can change politics (Spoiler, we did it).         </a>
-
-      <div class="location-image">
-        <a href=cfm>
-            <img width="300" height="169" src="/images/vote_mock.png" alt= "">    </a>
-      </div>
-
-    </article>
-
-    <!-- <article id="3697" class="location-listing">
-
-      <a class="location-title" href=cfm>
-        My Personal Porfolio          </a>
-
-      <div class="location-image">
-        <a href=cfm>
-            <img width="300" height="169" src="/images/cfm_mock.png" alt= "">    </a>
-      </div>
-
-    </article> -->
-  </div>
-  <!-- end grid container -->
-
-</div>

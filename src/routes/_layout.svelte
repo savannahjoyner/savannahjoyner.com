@@ -2,6 +2,9 @@
   
 	import Navbar from '../components/Navbar.svelte';
   import data from "../data/data.js";
+  // import StickyContent from './StickyContent.svelte';
+
+  let stickToTop = true;
 	let scrolled = false
 
 	const onScroll = ({ target: { documentElement, body } }) => {
@@ -18,7 +21,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </svelte:head>
-<Navbar {scrolled} navlists={data.NAVBAR_DATA} header={data.HEADER} />
+
+<Navbar {stickToTop} navlists={data.NAVBAR_DATA} header={data.HEADER} >
+</Navbar>
 
 <main>
 	<slot></slot>

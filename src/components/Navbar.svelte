@@ -1,9 +1,9 @@
 
 <script>
-  import { slide , fly } from 'svelte/transition';
+  import { slide , fly,  } from 'svelte/transition';
  export let navlists = [];
  export let header;
- let y;
+ let y=0;
 </script>
 <svelte:window bind:scrollY={y} />
 <svelte:head> 
@@ -12,15 +12,17 @@
     href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@200;300;800&family=Source+Serif+Pro:wght@300;400;600&display=swap"
     rel="stylesheet"
   />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&family=Cormorant+Garamond:wght@300;400&family=Crimson+Text&family=EB+Garamond&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet"> 
 </svelte:head>
 
 
-  {#if y < 80}
-  <section id="nav-bar" transition:fly>
+ 
+  <section id="nav-bar" >
  <!-- <nav class="navbar main-bgcolor navbar-expand-md navbar-dark"> -->
-<nav class="navbar navbar-expand-md navbar-light main-bgcolor">
+<nav class="navbar navbar-expand-md navbar-light main-bgcolor" class:shrink={y >= 80}>
   <div class="topnav-centered">
     <a href="#home" class="active">SAVJOYNER</a>
     <!-- <a href="#home" class="active"><img src="../images/android-chrome-192x192.png" alt= ""  style="width:30%; margin-left:30%;"/></a> -->
@@ -88,10 +90,11 @@
  </div>
  </nav>
 </section>
-{/if}
+
 <style>
+
   .active {
-    font-family:'Proza Libre', sans-serif;
+    font-family:'Open Sans', sans-serif;
     color: rgb(51, 48, 48);
     font-size: 16px;
     font-weight: 700;
@@ -181,7 +184,7 @@
  
  }
 .navbar {
- padding: 40px 40px !important;
+ padding: 10px 40px !important;
 
  }
 .navbar-nav li {
@@ -219,4 +222,11 @@
   transform: translate(-50%, -50%);
 }
  }
+ .shrink {
+	padding: 10px 10px;
+}	
+	
+.shrink-text {
+	font-size: 5px !important;
+}	
 </style>

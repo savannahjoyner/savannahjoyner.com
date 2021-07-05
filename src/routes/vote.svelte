@@ -17,12 +17,12 @@
 
 
 <header>
-  <div style="background-color: #473198">
+  <div style="background-color: #dcdcdc">
     <img
       class="page-cover-image"
-      src="../images/vote_mock.png"
+      src="../images/vote_mock.jpg"
       alt=""
-      style="width:55%; object-position:center 27.810000000000002%"
+      style="width:40%; object-position:center 27.810000000000002%"
     />
   </div>
 </header>

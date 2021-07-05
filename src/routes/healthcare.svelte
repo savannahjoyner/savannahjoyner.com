@@ -16,12 +16,12 @@
 
 
 <header>
-  <div style="background-color: #251f47">
+  <div style="background-color:#bfc8ff">
     <img
       class="page-cover-image"
-      src="../images/healthcare_mock.png"
+      src="../images/healthcare_mock.jpg"
       alt=""
-      style="width:55%; object-position:center 27.810000000000002%"
+      style="width:45%; object-position:center 27.810000000000002%"
     />
   </div>
 </header>

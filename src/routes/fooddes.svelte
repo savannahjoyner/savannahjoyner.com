@@ -14,12 +14,12 @@
 </svelte:head>
 
 <header>
-  <div style="background-color: #d55738">
+  <div style="background-color: #efd5c5">
     <img
       class="page-cover-image"
-      src="../images/fooddesertfull.png"
+      src="../images/food_mock_large.png"
       alt=""
-      style="width:55%; object-position:center 27.810000000000002%"
+      style="width:70%; object-position:center 27.810000000000002%"
     />
   </div>
 </header>

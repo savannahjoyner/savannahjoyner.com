@@ -16,10 +16,10 @@
 
 
 <header>
-  <div style="background-color: #136f64">
+  <div style="background-color: #fff7af">
     <img
       class="page-cover-image"
-      src="../images/cfm_mock.png"
+      src="../images/cfm_mock3.jpg"
       alt=""
       style="width:55%; object-position:center 27.810000000000002%"
     />

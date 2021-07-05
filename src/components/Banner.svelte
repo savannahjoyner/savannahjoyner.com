@@ -15,7 +15,7 @@ let squ = "https://blush.design/api/download?shareUri=I2R3x9gr7&w=800&h=800&fm=p
 </svelte:head>
 
 <section class="main-bgcolor" id= "banner">
-  <div class="container" style="margin-top: 10%; margin-bottom:17%;">
+  <div class="container" style="margin-top: 15%; margin-bottom:17%;">
     
       <div class="text-align-center" style="margin-top:30px">
         <h1 style=""> Hello! I'm Savannah Joyner. &nbsp;
